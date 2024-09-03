@@ -2,7 +2,6 @@
 /dist
 /node_modules
 /build
-.docker/*
 
 # Logs
 logs
@@ -42,6 +41,11 @@ lerna-debug.log*
 .env.test.local
 .env.production.local
 .env.local
+
+# Docker
+.docker/*
+!.docker/entrypoint.sh
+!.docker/postgres/Dockerfile
 
 # temp directory
 .temp
